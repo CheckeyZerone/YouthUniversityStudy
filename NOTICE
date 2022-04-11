@@ -1,5 +1,4 @@
-"""
-<one line to give the program's name and a brief idea of what it does.>
+<A python script for YOUTH UNIVERSITY STUDY of Jiangxi>
     Copyright (C) 2022  CheckeyZerone
 
     This program is free software: you can redistribute it and/or modify
@@ -13,10 +12,3 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-"""
-
-from core import run
-
-if __name__ == '__main__':
-    [unfinished_list, finished_rate_list, file_name] = run.study_records_arrangement()
-    # print(a)
