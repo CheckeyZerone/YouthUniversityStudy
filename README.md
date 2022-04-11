@@ -37,7 +37,9 @@
 
 
 #### FAQ
-**Q: table_1.csv文件内容应该是怎样的格式？**感谢@Azurlane-a 提出的问题
+**Q: table_1.csv文件内容应该是怎样的格式？**
+
+（感谢@Azurlane-a 提出的问题）
 
 A: table_1.csv的内容格式说明如下
 
