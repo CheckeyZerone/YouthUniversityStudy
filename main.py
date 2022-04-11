@@ -1,5 +1,5 @@
 """
-<one line to give the program's name and a brief idea of what it does.>
+<A python script for YOUTH UNIVERSITY STUDY of Jiangxi.>
     Copyright (C) 2022  CheckeyZerone
 
     This program is free software: you can redistribute it and/or modify
