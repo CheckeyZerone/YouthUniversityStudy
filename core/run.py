@@ -22,9 +22,9 @@ def study_records_arrangement(original_date_path='.\\Original Study Records',
     students_list_name = r'students_list.csv'  # 学生名单文件名（csv格式）
     students_list = list(tools.read_csv(students_list_name))  # 列表元素是一个包含姓名、学号、支部的列表
     del students_list[0]  # 删除表头，排除干扰
-    for i in students_list:
-        print(i)
-    input()
+    # for i in students_list:
+    #     print(i)
+    # input()
     # 加载已学习名单
     original_study_record_name = os.path.join(original_date_path, original_date_name)
     original_study_record = list(tools.read_csv(original_study_record_name))
@@ -54,6 +54,9 @@ def study_records_arrangement(original_date_path='.\\Original Study Records',
             finished_rate[class_code][1] -= 1  # 计算支部已完成人数（减去没有完成的人）
             finished_rate[class_code][0] += 1  # 计算支部未完成人数
             finished_rate[class_code][3] = finished_rate[class_code][1] / finished_rate[class_code][2]  # 计算支部完成率
+
+    # 对学生按照支部代号排序
+    unfinished_list.sort(key=lambda ele: ele[2])
 
     # 整合支部未完成名单数据
     unfinished_list = [unfinished_title] + unfinished_list
