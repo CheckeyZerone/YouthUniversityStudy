@@ -34,8 +34,11 @@ def finished(student: list, table) -> bool:  # student是学生信息，table是
         # 考虑到会出现重名的情况（最极端的情况是同一个班级里有数个名字一样的人），同时会对学号和班级信息进行判断
         # judge = (table[index][4] == student[1] or table[index][4] == student[0]) \
         #         and table[index][6] == student[2]
-        judge = student[0] in table[index] and student[2] in table[index] or \
-                 student[1] in table[index] and student[2] in table[index]
+        table_str = ' '.join(table[index])
+        judge = re.findall(student[0], table_str) and re.findall(student[2], table_str) or \
+                re.findall(student[1], table_str) and re.findall(student[2], table_str)
+        # judge = student[0] in table[index] and student[2] in table[index] or \
+        #          student[1] in table[index] and student[2] in table[index]
         if judge:
             ret = True
             break
