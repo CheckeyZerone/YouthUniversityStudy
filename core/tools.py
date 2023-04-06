@@ -2,6 +2,7 @@ import csv
 import openpyxl
 from openpyxl.styles import Font
 import os
+import re
 from core import my_errors
 import time
 import smtplib
